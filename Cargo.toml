@@ -7,10 +7,10 @@ license = "Apache-2.0"
 
 [dependencies]
 anyhow = "1"
-ethereum = { version = "0.5", default-features = false }
-ethereum-types = "0.9"
+ethereum = { git = "https://github.com/rust-blockchain/ethereum", branch = "vorot93/dev" }
+ethereum-types = { git = "https://github.com/paritytech/parity-common" }
 thiserror = "1"
-rlp = "0.4"
+rlp = { git = "https://github.com/paritytech/parity-common" }
 secp256k1 = { version = "0.19", features = ["global-context", "rand-std", "recovery"] }
 sha3 = "0.9"
 tracing = "0.1"
